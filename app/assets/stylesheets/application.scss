@@ -17,3 +17,29 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.notice, #notice{
+    background: #ffffbb;
+    border-radius: 0.5em;
+    border: solid 0.177em#ffffbb;
+    color: #882;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 1em 1.414em;
+    text-align: center; 
+}
+ul{
+    list-style: none;
+}
+.cart{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.item{
+    margin-top: 20px;
+}
+.fixed{
+    position: fixed;
+    z-index: 10000;
+    top: 0px;
+}
