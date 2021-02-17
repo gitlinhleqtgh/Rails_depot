@@ -1,0 +1,28 @@
+<% provide :title, t('log_in') %>
+
+<div class="container">
+        <div class="header">
+          <h2>Login</h2>
+        </div>
+<br>
+<%= form_for :session, url: login_path do |f| %>
+          <div class="form-control ">
+          <label>Email</label>
+          <input id="session_email" type= "email" name="session[email]" placeholder="name@domain.com">
+
+            <small>Error Message</small>
+
+          </div>
+          <div class="form-control">
+          <label>Password</label>
+          <input id="session_password" type= "password" name="session[password]" placeholder="Enter Password">
+
+            <small>Error Message</small>
+
+          </div>
+
+          <button name="commit" type="submit" type="submit">Submit</button>
+        </form>
+ <% end %>
+      </div>
+

@@ -1,0 +1,93 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  overflow: hidden;
+  max-width: 100%;
+  padding-top: 100px
+}
+
+.header {
+  background: #f7f7f7;
+  border: 1px solid #f0f0f0;
+
+  padding: 20px 40px;
+  justify-content: center;
+  display: flex;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 100px;
+  padding-bottom: 200px;
+
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  display: block;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  buttom: 0;
+  left: 0;
+}
+
+button {
+  background: #36d18e;
+  border: 2px solid #36d18e;
+  color: white;
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+
+#error_explanation {
+color: red;
+width: 100%;
+ul {
+color: red;
+margin: 0 0 30px;
+
+}
+}
+.field_with_errors {
+
+.form-control {
+color: red;
+}
+}

@@ -1,3 +1,79 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.form-product{
+    margin: 0 30px;
+}
+.form_description{
+    height: 300px;
+}
+
+.col.product{
+    margin-top: 50px;
+}
+
+.th_table{
+    font-family: 'Courier New', Courier, monospace;
+}
+.image{
+    border-radius: 5px;
+    height: 350px;
+    width: 512px;
+    box-shadow: 1px;
+}
+.btn_Show{
+    background-color:hsl(134, 100%, 50%);
+    display: -moz-box;
+    border: hsl(134, 100%, 50%) solid;
+    border-radius: 5px;
+    color: wheat;
+}
+.btn_Edit{
+    background-color: #ff00fb;
+    display: -moz-box;
+    border:  #ff00fb solid;
+    border-radius: 5px;
+    color: wheat;
+}
+.btn_Destroy{
+    background-color: #ff0000;
+    display: -moz-box;
+    border:  #ff0000 solid;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-form-edit{
+    background-color:hsl(134, 100%, 50%);
+    display: -moz-box;
+    border: hsl(134, 100%, 50%) solid;
+    border-radius: 5px;
+    color: wheat;
+}
+
+
+
+
+@media(any-hover:hover){
+    .btn_Destroy:hover, .btn_Edit:hover, .btn_Show:hover{
+        background: hsl(186, 100%, 50%);
+        color: wheat;
+        border: hsl(186, 100%, 50%);
+    }   
+}
+
+
+.detail{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.detail>.image{
+    margin-top: 30px;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
