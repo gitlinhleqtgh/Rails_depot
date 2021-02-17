@@ -1,62 +1,7 @@
-<ul id="nav-demo">
-    <li id="li_nav">
-        <a href="">
-            <div class="text-container">Home</div>
-        </a>
-    </li>
-    <li id="li_nav">
-        <a href="">
-            <div class="text-container">Product</div>
-        </a>
-    </li>
-    <li id="li_nav">
-        <a href="">
-            <div class="text-container">News</div>
-        </a>
-    </li>
-    <li id="li_nav">
-        <a href="">
-            <div class="text-container">Contact</div>
-        </a>
-    </li>
-    <div class="login">
-    <li id="li_nav">
-        <a href="">
-            <div class="text-container">Login</div>
-        </a>
-    </li>
-    <li id="li_nav" style="float:left;">
-        <a href="">
-            <div class="text-container">Logout</div>
-        </a>
-    </li>
-    </div>
-</ul>
+
+
 <div class="row">
-<div class="col right">
-<ul id="cate-demo">
-    <li id="li_cate">
-        <a href="">
-            <div class="text-container">Home</div>
-        </a>
-    </li>
-    <li id="li_cate">
-        <a href="">
-            <div class="text-container">Product</div>
-        </a>
-    </li>
-    <li id="li_cate">
-        <a href="">
-            <div class="text-container">News</div>
-        </a>
-    </li>
-    <li id="li_cate">
-        <a href="">
-            <div class="text-container">Contact</div>
-        </a>
-    </li>
-</ul>
-</div>
+<%= render  "layouts/category" %>
 <div class="col left">
 <% if notice %>
     <aside id='notice'>
@@ -78,8 +23,14 @@
                     </p>
                     <div class="price">
                     <%= number_to_currency(product.price)%>
-                    <%= button_to 'Add to Cart', line_items_path(product_id: product), class: 'btn_addCart'%>
                     </div>
+                    <div class="str_button">
+                     <%= button_to 'Add to Cart',
+                         line_items_path(product_id: product),
+                         class: 'btn_addCart',
+                         :remote => true%>
+                    </div>
+
                 </div>
             </li>
         <% end %>
@@ -88,4 +39,4 @@
     </ul>
 </div>
 </div>
-<script>
+

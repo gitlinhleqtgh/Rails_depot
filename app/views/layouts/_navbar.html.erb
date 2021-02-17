@@ -1,0 +1,53 @@
+<ul id="nav-demo">
+    <li id="li_nav">
+        <a href="">
+            <div class="text-container">
+            <%= link_to 'Home', root_path %>
+            </div>
+        </a>
+    </li>
+    <li id="li_nav">
+        <a href="">
+            <div class="text-container">
+            <%= link_to 'Admin', products_path, class: 'admin'%>
+            </div>
+        </a>
+    </li>
+    <li id="li_nav">
+        <a href="">
+            <div class="text-container">News</div>
+        </a>
+    </li>
+    <li id="li_nav">
+        <a href="">
+            <div class="text-container">Contact</div>
+        </a>
+    </li>
+    <li id="li_nav">
+        <a href="">
+            <div class="text-container">
+                <%= link_to 'Signup', signup_url, class: '/signup'%>
+
+                </div>
+        </a>
+    </li>
+    <div class="login">
+    <li id="li_nav">
+        <a href="">
+            <div class="text-container">
+                <% if Logged_in? %>
+                <div>success</div>
+                <% else %>
+                <%= link_to "Signin", login_url , class: '/login' %>
+                   <% end %>
+            </div>
+
+        </a>
+    </li>
+    <li id="li_nav" style="float:left;">
+        <a href="">
+            <div class="text-container">Logout</div>
+        </a>
+    </li>
+    </div>
+</ul>

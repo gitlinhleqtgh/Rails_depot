@@ -27,17 +27,31 @@
 .price{
     float: left;
 }
+
+.str_button{
+    float: left;
+}
+
 .btn_addCart{
     height: 35px;
     width: 100px;
-    margin-left: 300px;
+    margin-left: 250px;
     border-radius: 5px;
     font-family: 'Nunito', sans-serif;
     background: linear-gradient(90deg, rgb(7, 190, 199) 0%, rgb(26, 190, 245) 100%);
     color: #fff;
     border: #fff;
 }
-
+.btn_Detail{
+    height: 335px;
+    width: 100px;
+    margin-left: 400px;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(90deg, rgb(7, 190, 199) 0%, rgb(26, 190, 245) 100%);
+    color: #fff;
+    border: #fff;
+}
 
 #id_product{
     list-style: none;
@@ -72,7 +86,6 @@
     display: table;
     clear: both;
 }
-
 #nav-demo {
     list-style: none;
     margin:0;
@@ -82,7 +95,13 @@
     -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.3);
             box-shadow: 0 3px 10px rgba(0,0,0,0.3);
     padding: 20px 0;
-    height: 80px;   
+    height: 80px;  
+    width: 100%;
+    position: fixed; 
+}
+#cate-demo{
+    margin-top: 100px;
+    position: fixed;
 }
 .text-container{
     font-size: 15px;
